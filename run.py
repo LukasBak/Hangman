@@ -26,30 +26,37 @@ def print_rules():
     print("4. Incorrect guesses will reduce your remaning attempts by one until it hits 0")
     print("5. If you run out of attempts the game will be over.\n ")
 
+
 def display_word(word, guessed_letters):
-    display = ""
+    displayed_word = " "
     for letter in word:
         if letter in guessed_letters:
-            display += letter
+            displayed_word += letter + ""
         else: 
-                display += "_"
-                return display
+                displayed_word += ""
+                return displayed_word.strip()
 
-def get_user_guess():
+
+
+def get_user_guess(display_word,):
     while True:
-        attempt = 6
-        word = choose_random_battle()
-        display = ""
-        guess = input("Your guess:").upper()
+
+        guess = input("Your guess:  ").upper()
         if guess in guessed_letters:
             print("You already tried this!")
         elif guess in display_word:
            print("You are correct!")
-           display_word.append(guess)
+           display += guess + " "
         else:
-            print(display)
+            attempts -= 1
+            print("Game over! You have been hanged!")
 
 
+"""
+def guessed_letters(display_word,):
+    if guess is display_word:
+        print("You are correct!") 
+"""
 
 
 
@@ -57,7 +64,7 @@ def choose_random_battle():
     """
     Function for random battle choice.
     """
-    return random.choice(battles)
+    return random.choice(battles).upper()
 
 def main():
     player_name = input("Enter your name or nickname \n" )
@@ -65,7 +72,8 @@ def main():
     print_rules()
     word = choose_random_battle()
     display_word = "_" * len(word)
-    attempt = 6
+    get_user_guess(display_word)
+    attempts = 6
     while True:
         play_game = input(f"Would you like to continue? y or n  \n")
         if play_game.lower() == "y":
@@ -76,8 +84,9 @@ def main():
             main()
             exit()
     print("Code after loop")
+    """
     get_user_guess()
-    
+    """
     
    
     """
