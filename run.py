@@ -56,14 +56,13 @@ def display_word(word, guessed_letters):
     return "".join(display)
 
 
-"""
+def get_user_guess(battles):
+
+    """
 With every guess a Letter either remains hidden and player reduces amount of
 attempts has, if guessed correctly remain same.
 Second loop of the where most logic is stored.
-    """
-def get_user_guess(battles):
-
-
+ """
     guessed_letters = []
     attempts = 6
     choose_battle = choose_random_battle(battles)
