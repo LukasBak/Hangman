@@ -3,7 +3,7 @@
 This is my third milestone project which is a game Medieval Hangman. This game has been designed for those interested in trying a bit of their knowledge around medieval Europe, battles to be specific.
 Rules has and tips been added inside the game. 
 
-![View Deployed Site Here!](https://medieval-hangman-79561d9b2ff5.herokuapp.com/)
+View Deployed Site Here!(https://medieval-hangman-79561d9b2ff5.herokuapp.com/)
 
 ## How to play
 
