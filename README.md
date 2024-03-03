@@ -1,32 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Medieval Hangman
 
-Welcome,
+This is my third milestone project which is a game Medieval Hangman. This game has been designed for those interested in trying a bit of their knowledge around medieval Europe, battles to be specific.
+Rules has and tips been added inside the game. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+![View Deployed Site Here!](https://medieval-hangman-79561d9b2ff5.herokuapp.com/)
 
-## Reminders
+## How to play
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Medieval Hangman is fairly simple game, you need to guess a medieval battle, as a hint it is mostly Towns/Citys around Europe as the game is based around European region.
+Every correct guess would reveal a letter that has been guessed correctly while others would remain as underscores.
+If players attempt count reaches 0 they will be hung and it will be game over.
 
-## Creating the Heroku app
+## Existing features
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- Random word generation - Picks out a word to be guessed from a list provided.
+- Player can only see underscores and count how many letters could be added.
+- Accepts user input.
+- Limited amount of attempts per round.
+- If same letter guessed twice, game will return with "You have tried this already!"
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Future features
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+- Add option for different regions around the world for more tests of knowledge.
+- Give hints about where the battle took place or who were the commanders.
+- In general add more battles as the current sample list is quite small.
+- Add option for different centuries.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Testing
 
-Connect your GitHub repository and deploy as normal.
+I have manualy tested this porject by:
+- Passed code through PEP8 linter and found no issues
+![Linter Results](documentation/validator.png)
+- Entering same letters provides with you have tried this letter before.
+- I have tried the game inside the Gitpod.io terminal as well as Heroku app terminal.
 
-## Constraints
+## Bugs remaining
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+    - If typing nothing while in game, game displays "Well done you guessed the letter" but, nothing besides that happens, player count remains the same guessed letter do not appear. Did not have enough time to solve this bug.
 
----
+## Bugs solved
 
-Happy coding!
+- I had issues with letters that have been guessed not prining out afer being typed in. In order to solve this I shifted print statements around which seems to done the trick.
+
+## Deployment
+
+# Github forking
+
+- Go to github repository
+- At the top of the page you will find  a "Fork Button" press it.
+- In the next page you will find green button in middle of your page, again click create.
+
+# Heroku Deployment
+
+- Log into Heroku.
+- Inside the app click on dashboard, then click on "Create new App".
+- Enter Unique name for you application otherwise it might get rejected, select region which suits you.
+- Click on create app.
+- At the application configuration page, apply settings as follow Deploy section: aplication. In the reveal Config VARS enter "CREDS" for the Key you want to paste your contents from your CREDS.json file. Note that this step is neccesary if you have added external APIs.
+- Click on add.
+- Add another config Var  with key PORT and value of "8000"
+- Inside  Settings go down to the Buildpack  while clicking on Add Build Pack.
+- Make sure to add python as first and then nodejs in order to run server properly.
+- Go to the Deploy Section and select  to deploy "Automatically"(Note this is not necessary but saves time, as your app will automatically refresh with every git push)
+- Click on deploy wait for deploy ment website should be will be displayed there.
+
+## Aplications Used
+
+Gitpod.io IDe for developing the website.
+Github.com was used for keeping version control and posting my readme.
+Heroku.com was used  for hosting website.
+Code institute template for begining of work.
+W3C schools for refreshing memories on code.
