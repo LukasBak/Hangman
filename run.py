@@ -32,8 +32,7 @@ def print_rules():
     print("3. If letter guessed right it will apear on board.\n")
     print("4. Wrong guess will reduce your remaning attempts by 1.\n")
     print("5. If you attempts remaining become 0 its game over.\n")
-    print("6. If you run out of attempts the game will be over.\n ")
-    print("7. If name not provided it be displayed as Anonymous Player.\n")
+    print("6. If name not provided it be displayed as Anonymous Player.\n")
 
     """
     Function for random battle choice.
