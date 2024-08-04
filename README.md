@@ -28,45 +28,18 @@ If players attempt count reaches 0 they will be hung and it will be game over.
 
 ## Testing
 
-| Test Label                                                             | Test Action                                      | Expected Outcome                                                            | Test outcome |
-| ---------------------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- | ------------ |
-| Enter name                                                             | Run program                                      | Display message to enter players name.                                      | Pass         |
-| Blank name                                                             | Leave name section empty                         | If player leaves name blank it should come up as                            |
-|                                                                        |
-| Anonymous Player.                                                      | Pass                                             |
-| Display welcome message                                                | Enter name or leave it blank and                 |
-|                                                                        |
-| press enter                                                            | After user enter their name/leaves it blank they |
-|                                                                        |
-| should receive a welcome message and display                           |
-|                                                                        |
-| of rules hangman and some tips.                                        | Pass                                             |
-| Continue                                                               | Press y / n and enter                            | After pressing y user should be able to proceed.                            |
-|                                                                        |
-| If they have entered N they will brought back to beginning.            | Pass                                             |
-| Ready to start                                                         | Press enter                                      | Press enter to start the game.                                              | Pass         |
-| Display word                                                           | Entering the game                                | After entering the game user should be displayed a word with                |
-|                                                                        |
-| "_" on every letter that has not been guessed yet.                     | Pass                                             |
-| Correct guess                                                          | Enter correct letter                             | If user enters correct letter the "_" turns into correctly guessed          |
-|                                                                        |
-| letters and receive message " Well done! You have guessed a            |
-|                                                                        |
-| correct letter!" the remaining attempts will stay the same.            | Pass                                             |
-| Incorrect guess                                                        | Wrong letter                                     | When user enters incorrect letter or number they will receive message       |
-|                                                                        |
-| "You are incorrect!" their remaining attempts will go down by 1.       | Pass                                             |
-| Invalid guess                                                          | Enter number/blank space                         | Whenever user tries to enter a number or tries to enter nothing they will   |
-|                                                                        |
-| receive the following message "Please enter a letter". Their remaining |
-|                                                                        |
-| attempts will remain the same.                                         | Pass                                             |
-| Winning                                                                | Guess the word correctly                         | If user guesses all the letters correctly they will have message display of |
-|                                                                        |
-| "Congratulations! You have guessed the word:(The word guessed) "       | Pass                                             |
-| Loosing                                                                | Guess the word incorrectly                       | If user runs out of attempts they will be shown a message: "You've run out  |
-|                                                                        |
-| of attempts! Your word was: "                                          | Pass                                             |
+| Test label              | Test action                                  | Expected outcome                                                                                                                                                                                                   | Test outcome |
+| ----------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| Enter Name              | Run program                                  | Display message to enter players name.                                                                                                                                                                             | Pass         |
+| Blank Name              | Leave name section empty                     | If user leaves their name as blank it should come up as "Anonymous Player".                                                                                                                                        | Pass         |
+| Display welcome Message | Enter name or leave it blank and press enter | After user enters their name or leaves it blank they should receive a welcome message and a display of rules of hangman as well as tips on how to play.                                                            | Pass         |
+| Continue                | Type y or n in terminal to proceed           | After pressing y user should be able to proceed. If they chose "n" they will be brought back to beginning.                                                                                                         | Pass         |
+| Display Word            | Press Enter                                  | After user has pressed enter on their keyboard. User will be displayed with their word which will be covered with "_" on every letter that is to be guessed.                                                       | Pass         |
+| Correct Guess           | Enter correct letter                         | If user guesses correct letter, the hidden letter will be revealed while the rest of the unguessed letters remain the same. In addition they will receive a message "Well done! you have guessed correct letter!". | Pass         |
+| Incorrect Guess         | Enter incorrect letter                       | If user guessed incorrectly their remaining attempts will go down by 1 until they reach 0 attempts. They also are displayed with message: "You are incorrect!".                                                    | Pass         |
+| Invalid Guess           | Enter number/multiple letters                | If user enters numbers or multiple letter they will be receive a following statement "Please enter a letter" or "Please enter one letter". Their remaining attempts won't change.                                  | Pass         |
+| Winning                 | Guess the word correctly                     | If user guessed all the letters correctly they be displayed a message "Congratulations! You have guessed the word:(The word guessed) ".                                                                            | Pass         |
+| Loosing                 | Guess the word incorrectly                   | If user ran out of attempts they will receive a message: "You've ran out of attempts! You word was:(The correct word) "                                                                                            | Pass         |
 
 I have manualy tested this porject by:
 - Passed code through PEP8 linter and found no issues
