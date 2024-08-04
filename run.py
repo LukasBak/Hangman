@@ -71,7 +71,17 @@ def get_user_guess(battles):
     while attempts > 0:
         print("Your word:\n", display_word(choose_battle, guessed_letters))
         print("Remanining attempts:\n", attempts)
-        guess = input("Your guess:\n ").upper()
+        guess = input("Your guess:\n ").upper().strip()
+        if len(guess) == 0:
+            print("Please enter a letter")
+            continue
+        if len(guess) > 1:
+            print("Please enter one letter")
+            continue
+        if not guess.isalpha():
+            print("Please enter a letter.")
+            continue
+
         if guess in guessed_letters:
             print("You already guessed this!\n")
             continue
@@ -83,7 +93,7 @@ def get_user_guess(battles):
         else:
             print("Well done! You guessed a correct letter!\n")
         if display_word(choose_battle, guessed_letters) == choose_battle:
-            print("Congratulations! You guessed the word:\n", choose_battle)
+            print("Congratulations! You have guessed the word:\n", choose_battle)
             break
         elif attempts == 0:
             print("You've run out of attempts! The word was:\n", choose_battle)
@@ -94,15 +104,17 @@ def main():
     """
     First loop when enterering the game.
     """
-    player_name = input("Enter your name or nickname \n")
+    player_name = input("Enter your name or nickname \n").strip()
+    if not player_name:
+        player_name = "Anonymous"
     print(f"Welcome {player_name} to medieval battles hangman!")
     print_rules()
     choose_battle = choose_random_battle(battles)
     guessed_letters = []
     while True:
-        play_game = input(f"Would you like to continue? y or n  \n")
+        play_game = input(f"Would you like to continue? y or n  \n").strip().upper()
         if play_game.lower() == "y":
-            input(f"If you are ready press enter: \n")
+            input(f"If you are ready press enter: \n").strip()
             get_user_guess(battles)
             break
         elif play_game.lower() == "n":
