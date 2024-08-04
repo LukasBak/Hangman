@@ -35,12 +35,12 @@ def print_rules():
     print("6. If you run out of attempts the game will be over.\n ")
     print("7. If name not provided it be left as blank.\n")
 
-
-def choose_random_battle(battles):
-    return random.choice(battles).upper()
     """
     Function for random battle choice.
     """
+def choose_random_battle(battles):
+    return random.choice(battles).upper()
+
 
 
 def display_word(word, guessed_letters):
@@ -58,11 +58,12 @@ def display_word(word, guessed_letters):
 
 def get_user_guess(battles):
 
+    
     """
-With every guess a Letter either remains hidden and player reduces amount of
-attempts has, if guessed correctly remain same.
-Second loop of the where most logic is stored.
- """
+    With every guess a Letter either remains hidden and player reduces amount of
+    attempts has, if guessed correctly remain same.
+    Second loop of the where most logic is stored.
+    """
     guessed_letters = []
     attempts = 6
     choose_battle = choose_random_battle(battles)
