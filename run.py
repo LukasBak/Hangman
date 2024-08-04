@@ -63,6 +63,8 @@ def get_user_guess(battles):
     With every guess a Letter either remains hidden and player reduces amount of
     attempts has, if guessed correctly remain same.
     Second loop of the where most logic is stored.
+
+
     """
     guessed_letters = []
     attempts = 6
@@ -106,7 +108,7 @@ def main():
     """
     player_name = input("Enter your name or nickname \n").strip()
     if not player_name:
-        player_name = "Anonymous"
+        player_name = "Anonymous Player"
     print(f"Welcome {player_name} to medieval battles hangman!")
     print_rules()
     choose_battle = choose_random_battle(battles)
