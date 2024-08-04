@@ -48,7 +48,6 @@ def display_word(word, guessed_letters):
     Function for playing the game
     """
     display = []
-    print('word is ')
     for letter in word:
         if letter in guessed_letters:
             display.append(letter)
