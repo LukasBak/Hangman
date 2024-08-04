@@ -48,7 +48,7 @@ def display_word(word, guessed_letters):
     Function for playing the game
     """
     display = []
-    print('word is ', word)
+    print('word is ')
     for letter in word:
         if letter in guessed_letters:
             display.append(letter)
@@ -88,7 +88,6 @@ def get_user_guess(battles):
         if guess in guessed_letters:
             print("You already guessed this!\n")
             continue
-
         guessed_letters.append(guess)
         if guess not in choose_battle:
             print("You are incorrect!\n")
