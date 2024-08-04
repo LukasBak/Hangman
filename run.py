@@ -9,16 +9,16 @@ battles = [
     "Mohi",
     "Constantinople",
     "Grenada",
-    "Saule"
-    "Agincourt"
-    "Bouvines"
-    "Falkirk"
-    "Hattin"
-    "Carham"
-    "Tours"
-    "Oribetello"
-    "Clontarf"
-    "Bordeaux"
+    "Saule",
+    "Agincourt",
+    "Bouvines",
+    "Falkirk",
+    "Hattin",
+    "Carham",
+    "Tours",
+    "Oribetello",
+    "Clontarf",
+    "Bordeaux",
 ]
 
 
@@ -33,7 +33,7 @@ def print_rules():
     print("4. Wrong guess will reduce your remaning attempts by 1.\n")
     print("5. If you attempts remaining become 0 its game over.\n")
     print("6. If you run out of attempts the game will be over.\n ")
-    print("7. If name not provided it be left as blank.\n")
+    print("7. If name not provided it be displayed as Anonymous Player.\n")
 
     """
     Function for random battle choice.
@@ -48,6 +48,7 @@ def display_word(word, guessed_letters):
     Function for playing the game
     """
     display = []
+    print('word is ', word)
     for letter in word:
         if letter in guessed_letters:
             display.append(letter)
