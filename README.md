@@ -8,8 +8,20 @@ View Deployed Site Here!(https://medieval-hangman-79561d9b2ff5.herokuapp.com/)
 ## How to play
 
 Medieval Hangman is fairly simple game, you need to guess a medieval battle, as a hint it is mostly Towns/Citys around Europe as the game is based around European region.
-Every correct guess would reveal a letter that has been guessed correctly while others would remain as underscores.
-If players attempt count reaches 0 they will be hung and it will be game over.
+Every correct guess would reveal a letter that has been guessed correctly while others would remain as underscores.If players attempt count reaches 0 they will be hung and it will be game over.
+
+## User experience(UX)
+
+- ### User Stories
+
+    #### As a User, I want to be able to:
+   
+    1. Understand how to play the game.
+    2. Be able to read rules and tips if I haven't played the game before.
+    3. See the amount of attempts left before the game ends.
+    4. See the amount of letters inside the secret word.
+    5. If I fail to guess the word to see what the secret word was.
+    
 
 ## Existing features
 
@@ -25,6 +37,9 @@ If players attempt count reaches 0 they will be hung and it will be game over.
 - Give hints about where the battle took place or who were the commanders.
 - In general add more battles as the current sample list is quite small.
 - Add option for different centuries.
+- Add option for resuming games or quitting.
+
+
 
 ## Testing
 
@@ -41,10 +56,10 @@ If players attempt count reaches 0 they will be hung and it will be game over.
 | Winning                 | Guess the word correctly                     | If user guessed all the letters correctly they be displayed a message "Congratulations! You have guessed the word:(The word guessed) ".                                                                            | Pass         |
 | Loosing                 | Guess the word incorrectly                   | If user ran out of attempts they will receive a message: "You've ran out of attempts! You word was:(The correct word) "                                                                                            | Pass         |
 
-I have manualy tested this porject by:
-- Passed code through PEP8 linter and found no issues
+- I have manualy tested this porject by:
+- Passing code through PEP8 linter and found no issues
 ![Linter Results](documentation/validator.png)
-- Entering same letters provides with you have tried this letter before.
+
 - I have tried the game inside the Gitpod.io terminal as well as Heroku app terminal.
 
 ## Bugs remaining
@@ -84,5 +99,5 @@ I have manualy tested this porject by:
 Gitpod.io IDe for developing the website.
 Github.com was used for keeping version control and posting my readme.
 Heroku.com was used  for hosting website.
-Code institute template for begining of work.
+Code institute template for beginning of work.
 W3C schools for refreshing memories on code.

@@ -51,7 +51,7 @@ def display_word(word, guessed_letters):
         if letter in guessed_letters:
             display.append(letter)
         else:
-            display.append("_")
+            display.append("_ ")
     return "".join(display)
 
 
@@ -96,7 +96,7 @@ def get_user_guess(battles):
             print("Congratulations! You have guessed the word:\n", choose_battle)
             break
         elif attempts == 0:
-            print("You've run out of attempts! The word was:\n", choose_battle)
+            print("You've ran out of attempts! The word was:\n", choose_battle)
             break
 
 
