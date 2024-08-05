@@ -21,6 +21,7 @@ Every correct guess would reveal a letter that has been guessed correctly while 
     3. See the amount of attempts left before the game ends.
     4. See the amount of letters inside the secret word.
     5. If I fail to guess the word to see what the secret word was.
+    6. If input is  unacceptable have prompt explaining what went wrong without being penalised or game breaking down.
 
 
 ## Existing features
@@ -78,11 +79,12 @@ Every correct guess would reveal a letter that has been guessed correctly while 
 | Winning                 | Guess the word correctly                     | If user guessed all the letters correctly they be displayed a message "Congratulations! You have guessed the word:(The word guessed) ".                                                                            | Pass         |
 | Loosing                 | Guess the word incorrectly                   | If user ran out of attempts they will receive a message: "You've ran out of attempts! You word was:(The correct word) "                                                                                            | Pass         |
 
-- I have manualy tested this porject by:
-- Passing code through PEP8 linter and found no issues
+- I have manualy tested this project by:
+- Passing code through PEP8 linter and found issue on line 96 it has exceeded the limit of characters.
 ![Linter Results](documentation/validator.png)
 
 - I have tried the game inside the Gitpod.io terminal as well as Heroku app terminal.
+- I have sent this game to a friend of mine to check whether they could follow the rules.
 
 ## Bugs remaining
 
@@ -124,4 +126,9 @@ Every correct guess would reveal a letter that has been guessed correctly while 
  4. Code institute template for beginning of work.
  5. W3C schools for refreshing memories on code.
  6. https://pep8ci.herokuapp.com/ Python Linter
+ 
+## Acknowledgement
+    
+- This project has been completed with help of my mentor Brian Macharia, who has guided me a lot.
+- Tutors from code institute who helped me problem solve with bugs within my code.
 

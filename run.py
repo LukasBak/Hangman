@@ -62,7 +62,7 @@ def get_user_guess(battles):
     With every guess a Letter either remains hidden and player reduces
     amount of attempts has, if guessed correctly remain same.
     Second loop of the where most logic is stored.
-
+    Validation for data entry to prevent errors from occuring.
 
     """
     guessed_letters = []
@@ -112,7 +112,7 @@ def main():
     choose_battle = choose_random_battle(battles)
     guessed_letters = []
     while True:
-        play_game = input(f"Would you like to continue? y or n  \n").strip().upper()
+        play_game = input(f"Would you like to continue? y/n\n").strip().upper()
         if play_game.lower() == "y":
             input(f"If you are ready press enter: \n").strip()
             get_user_guess(battles)
