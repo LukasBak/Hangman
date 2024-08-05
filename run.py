@@ -31,15 +31,16 @@ def print_rules():
     print("2. Battles are chosen and based in europe and named after areas.\n")
     print("3. If letter guessed right it will apear on board.\n")
     print("4. Wrong guess will reduce your remaning attempts by 1.\n")
-    print("5. If you attempts remaining become 0 its game over.\n")
-    print("6. If name not provided it be displayed as Anonymous Player.\n")
+    print("5. If you attempts remaining goes down to 0 its game over.\n")
+    print("6. You can use uppercase and lowercase letters\n")
 
     """
     Function for random battle choice.
     """
+
+
 def choose_random_battle(battles):
     return random.choice(battles).upper()
-
 
 
 def display_word(word, guessed_letters):
@@ -57,10 +58,9 @@ def display_word(word, guessed_letters):
 
 def get_user_guess(battles):
 
-    
     """
-    With every guess a Letter either remains hidden and player reduces amount of
-    attempts has, if guessed correctly remain same.
+    With every guess a Letter either remains hidden and player reduces
+    amount of attempts has, if guessed correctly remain same.
     Second loop of the where most logic is stored.
 
 

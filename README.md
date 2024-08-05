@@ -21,7 +21,7 @@ Every correct guess would reveal a letter that has been guessed correctly while 
     3. See the amount of attempts left before the game ends.
     4. See the amount of letters inside the secret word.
     5. If I fail to guess the word to see what the secret word was.
-    
+
 
 ## Existing features
 
@@ -94,10 +94,12 @@ Every correct guess would reveal a letter that has been guessed correctly while 
 - Go to the Deploy Section and select  to deploy "Automatically"(Note this is not necessary but saves time, as your app will automatically refresh with every git push)
 - Click on deploy wait for deploy ment website should be will be displayed there.
 
-## Aplications Used
+## Credits
 
-Gitpod.io IDe for developing the website.
-Github.com was used for keeping version control and posting my readme.
-Heroku.com was used  for hosting website.
-Code institute template for beginning of work.
-W3C schools for refreshing memories on code.
+ 1. Gitpod.io IDe for developing the website.
+ 2. Github.com was used for keeping version control and posting my readme.
+ 3. Heroku.com was used  for hosting website.
+ 4. Code institute template for beginning of work.
+ 5. W3C schools for refreshing memories on code.
+ 6. https://pep8ci.herokuapp.com/ Python Linter
+
