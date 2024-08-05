@@ -25,11 +25,33 @@ Every correct guess would reveal a letter that has been guessed correctly while 
 
 ## Existing features
 
-- Random word generation - Picks out a word to be guessed from a list provided.
-- Player can only see underscores and count how many letters could be added.
-- Accepts user input.
-- Limited amount of attempts per round.
-- If same letter guessed twice, game will return with "You have tried this already!"
+#### Rules and tips
+
+- Welcome message along with rules and tips will be displayed once player chooses their name.
+- User will be promted to continue with a y or n.
+- Pressing enter will start the game.
+
+![Rules and Tips](documentation/rules.png)
+
+- If user uses no name or nickname their name will be left as Anonymous Player
+
+![Anonymous Player](documentation/anonymous.png)
+
+-  If user uses same letter again they will receive a message that they already guessed this letter.
+- User can use both capital and lowercase letters to guess words, if they use multiple letters they will be promted to use only one.
+
+![Guessing same letter](documentation/sameguess.png)
+
+- Secret word will be displayed clearly as soon as the game has been started.
+
+![Secret word](documentation/secretword.png)
+
+- Whenever user wins the game they will be receive a Congratulations for completing the secret word.
+
+![Win](documentation/win.png)
+
+- Whenver user looses the game their secret word will be displayed with a message of running out of attempts. 
+![Loss](documentation/loss.png)
 
 ## Future features
 
@@ -37,7 +59,7 @@ Every correct guess would reveal a letter that has been guessed correctly while 
 - Give hints about where the battle took place or who were the commanders.
 - In general add more battles as the current sample list is quite small.
 - Add option for different centuries.
-- Add option for resuming games or quitting.
+- Add option for resuming games or quitting. 
 
 
 
